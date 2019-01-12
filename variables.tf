@@ -53,6 +53,8 @@ variable "monitoring" {
 variable "vpc_security_group_ids" {
   description = "A list of security group IDs to associate with"
   type        = "list"
+
+  default     = ["sg-09cddf8e173d4ac54", "sg-09abf6ef6b29eee84"]
 }
 
 variable "subnet_id" {
